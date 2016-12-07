@@ -3,6 +3,7 @@
 var express = require('express');
 var moment = require('moment');
 var app = express();
+var port = process.env.PORT || 8080;
 
 app.get('/:time', function(req, res) {
 	var time = req.params.time;
@@ -27,6 +28,6 @@ app.get('/:time', function(req, res) {
 	res.send(JSON.stringify(response));
 })
 
-app.listen(8080, function() {
-	console.log('Timestamp API listening on port 8080!')
+app.listen(port, function() {
+	console.log('Timestamp API listening on port '+ port+'!')
 })
