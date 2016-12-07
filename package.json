@@ -1,0 +1,20 @@
+{
+  "name": "timestamp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Free",
+    "Code",
+    "Camp",
+    "Node"
+  ],
+  "author": "David Dinh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
