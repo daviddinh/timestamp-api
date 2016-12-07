@@ -5,6 +5,10 @@ var moment = require('moment');
 var app = express();
 var port = process.env.PORT || 8080;
 
+app.get('/', function(req, res) {
+	res.send("Hi! This is David's Timestamp API, refer to https://timestamp-ms.herokuapp.com/ for example usage and output.");
+})
+
 app.get('/:time', function(req, res) {
 	var time = req.params.time;
 	var response = {
